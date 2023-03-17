@@ -4,8 +4,7 @@ let image = document.querySelector(".image");
 let currentLoad = 0;
 
 function loadIncrement() {
-  currentLoad++;
-  loadPercentage;
+  currentLoad ++;
   loadPercentage.style.opacity = scaling(currentLoad, 0, 100, 1, 0);
   loadPercentage.innerText = currentLoad + "%";
   image.style.filter = `blur(${scaling(currentLoad, 0, 100, 30, 0)}px)`;
