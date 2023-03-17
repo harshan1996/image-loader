@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+
+body {
+  font-family: "Open Sans";
+  overflow: hidden;
+  display: flex;
+  align-items: center; /*this is vertical alignment*/
+  justify-content: center; /*this is horizontal alignment*/
+  height: 100vh;
+}
+
+.image {
+  background: url("./sample.jpeg");
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  filter: blur(100px);
+}
+
+.percentage {
+  font-size: 50px;
+  font-weight: 900;
+  color: brown;
+  justify-content: center;
+}
